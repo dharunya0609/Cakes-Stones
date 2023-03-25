@@ -107,4 +107,69 @@ import Tableform from "./tableForm";
   }
 
 
+<<<<<<< HEAD
 
+=======
+  return (
+    <div className="ordering">
+      <h2>Order for Tables and Cakes</h2>
+      {orderSubmitted ? (
+        <p>Thank you for your order!</p>
+      ) : (
+        <form onSubmit={handleSubmit}  action="https://formspree.io/f/myyadllj"
+        method="POST">
+          <label>
+            Table Number:
+            <input
+              type="text"
+              value={tableNumber}
+              onChange={handleTableNumberChange}
+            />
+          </label>
+          <br />
+          <label>
+            Select a Cake:
+            <select value={selectedCake} onChange={handleCakeSelection}>
+              <option value="">-- Please Select --</option>
+              <option value="chocolate">Chocolate Cake</option>
+              <option value="vanilla">Vanilla Cake</option>
+              <option value="red-velvet">Red Velvet Cake</option>
+            </select>
+          </label>
+          <br />
+          <label>
+            Cake Quantity:
+            <input
+              type="number"
+              min="1"
+              max="10"
+              value={selectedCakeQuantity}
+              onChange={handleCakeQuantityChange}
+            />
+          </label>
+          <br />
+          <button type="submit">Submit Order</button>
+        </form>
+      )}
+    </div>
+  );
+}
+
+export default Ordering;
+
+/*<form
+  action="https://formspree.io/f/myyadllj"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>*/
+>>>>>>> 5a5f9ef09b0da82211c4dfc1d12d18c66ca40c78
