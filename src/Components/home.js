@@ -1,14 +1,9 @@
-<<<<<<< HEAD
-// export default function Home()
-// {
-//     return(<>
-=======
+
 import './style.css'
 
 export default function Home()
 {
     return(<>
->>>>>>> 5a5f9ef09b0da82211c4dfc1d12d18c66ca40c78
    
       <main>
         <section className="hero">
@@ -19,7 +14,7 @@ export default function Home()
        
       </main>
       <footer>
-        <p>&copy; 2023 Delicious Cakes. All rights reserved.</p>
+        <p>footer</p>
       </footer>
     
     </>);

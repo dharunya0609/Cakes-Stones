@@ -69,18 +69,21 @@
 // }
 
 // export default Ordering;
-import React from 'react';
+import React, { useState } from "react";
 import "./order.css";
 import i1 from "../images/home_img.jpg";
 
-import Tableform from "./tableForm";
-  export default function Orders() 
-  {
+import Form from './form.js';
+import TableForm from "./tableForm";
+export default function Orders() 
+{
+  const [showTableForm, setTableForm] = useState(false);
+
+  const handleButtonClick = () => {
+    setTableForm(true);
+  };
+
     
-    const handleClick = () => {
-        // Call the function in AnotherComponent
-        Tableform.table();
-    }
     return (
       <div>
         <section className="orders">
@@ -88,12 +91,15 @@ import Tableform from "./tableForm";
             <img src={i1} alt="Cake 1" />
             <h3>Event Booking</h3>
             <p>Birthday parties</p>
-            <button onClick={handleClick}>Order Now</button>
+            <button onClick={handleButtonClick}>Order Now</button>
+            {showTableForm && <TableForm/>}
+
           </div>
           <div className="order">
             <img src="https://images.unsplash.com/photo-1613452707901-21b3fd7f7e5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y3VwJTIwY2FrZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="Cake 2" />
             <h3>Table Booking</h3>
             <p>Our cupcakes are the perfect treat for any time of the day.</p>
+            <a href={<form/>} class="btn btn-danger">Order Now</a>
           </div>
           <div className="order">
             <img src="https://images.unsplash.com/photo-1600730493985-d1efe3d85ff3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Cake 3" />
@@ -107,69 +113,69 @@ import Tableform from "./tableForm";
   }
 
 
-<<<<<<< HEAD
+// <<<<<<< HEAD
 
-=======
-  return (
-    <div className="ordering">
-      <h2>Order for Tables and Cakes</h2>
-      {orderSubmitted ? (
-        <p>Thank you for your order!</p>
-      ) : (
-        <form onSubmit={handleSubmit}  action="https://formspree.io/f/myyadllj"
-        method="POST">
-          <label>
-            Table Number:
-            <input
-              type="text"
-              value={tableNumber}
-              onChange={handleTableNumberChange}
-            />
-          </label>
-          <br />
-          <label>
-            Select a Cake:
-            <select value={selectedCake} onChange={handleCakeSelection}>
-              <option value="">-- Please Select --</option>
-              <option value="chocolate">Chocolate Cake</option>
-              <option value="vanilla">Vanilla Cake</option>
-              <option value="red-velvet">Red Velvet Cake</option>
-            </select>
-          </label>
-          <br />
-          <label>
-            Cake Quantity:
-            <input
-              type="number"
-              min="1"
-              max="10"
-              value={selectedCakeQuantity}
-              onChange={handleCakeQuantityChange}
-            />
-          </label>
-          <br />
-          <button type="submit">Submit Order</button>
-        </form>
-      )}
-    </div>
-  );
-}
+// =======
+//   return (
+//     <div className="ordering">
+//       <h2>Order for Tables and Cakes</h2>
+//       {orderSubmitted ? (
+//         <p>Thank you for your order!</p>
+//       ) : (
+//         <form onSubmit={handleSubmit}  action="https://formspree.io/f/myyadllj"
+//         method="POST">
+//           <label>
+//             Table Number:
+//             <input
+//               type="text"
+//               value={tableNumber}
+//               onChange={handleTableNumberChange}
+//             />
+//           </label>
+//           <br />
+//           <label>
+//             Select a Cake:
+//             <select value={selectedCake} onChange={handleCakeSelection}>
+//               <option value="">-- Please Select --</option>
+//               <option value="chocolate">Chocolate Cake</option>
+//               <option value="vanilla">Vanilla Cake</option>
+//               <option value="red-velvet">Red Velvet Cake</option>
+//             </select>
+//           </label>
+//           <br />
+//           <label>
+//             Cake Quantity:
+//             <input
+//               type="number"
+//               min="1"
+//               max="10"
+//               value={selectedCakeQuantity}
+//               onChange={handleCakeQuantityChange}
+//             />
+//           </label>
+//           <br />
+//           <button type="submit">Submit Order</button>
+//         </form>
+//       )}
+//     </div>
+//   );
+// }
 
-export default Ordering;
+// export default Ordering;
 
-/*<form
-  action="https://formspree.io/f/myyadllj"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>*/
->>>>>>> 5a5f9ef09b0da82211c4dfc1d12d18c66ca40c78
+// /*<form
+//   action="https://formspree.io/f/myyadllj"
+//   method="POST"
+// >
+//   <label>
+//     Your email:
+//     <input type="email" name="email">
+//   </label>
+//   <label>
+//     Your message:
+//     <textarea name="message"></textarea>
+//   </label>
+//   <!-- your other form fields go here -->
+//   <button type="submit">Send</button>
+// </form>*/
+// >>>>>>> 5a5f9ef09b0da82211c4dfc1d12d18c66ca40c78
