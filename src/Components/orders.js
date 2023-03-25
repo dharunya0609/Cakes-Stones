@@ -30,7 +30,8 @@ function Ordering() {
       {orderSubmitted ? (
         <p>Thank you for your order!</p>
       ) : (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}  action="https://formspree.io/f/myyadllj"
+        method="POST">
           <label>
             Table Number:
             <input
@@ -69,3 +70,19 @@ function Ordering() {
 }
 
 export default Ordering;
+
+/*<form
+  action="https://formspree.io/f/myyadllj"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>*/

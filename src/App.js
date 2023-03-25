@@ -3,6 +3,10 @@ import React from "react";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+// import WebFont from 'webfontloader';
+import { TbCherryFilled } from "react-icons/tb";
+
+
 
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -13,7 +17,7 @@ import Gallery from "./Components/gallery";
 import Orders from "./Components/orders";
 import About from "./Components/about";
 import Blogs from "./Components/blogs";
-import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
     return (
@@ -21,7 +25,9 @@ function App() {
             <BrowserRouter>
                 <Navbar bg="dark" variant="dark">
                     <Container>
-                        <Navbar.Brand href="/">CAKES AND STONES</Navbar.Brand>
+                        <Navbar.Brand href="/" style={{fontFamily: 'Cursive',color:'#ff5886',fontSize:'23px'}}>THE SIGNATURE CAKES & STONES
+                       <TbCherryFilled/>
+                        </Navbar.Brand>
                         <Nav className="ms-auto">
                             <Nav.Link href="/">HOME</Nav.Link>
                             <Nav.Link href="/gallery">GALLERY</Nav.Link>
