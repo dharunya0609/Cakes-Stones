@@ -20,6 +20,7 @@ import Blogs from "./Components/blogs";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
+    
     return (
         <>
             <BrowserRouter>
