@@ -5,78 +5,41 @@
     padding: 0;
     font-family: Arial, sans-serif;
   }
-  
-  /* Set background color for the whole page */
-  body {
-    background-color: #f9f9f9;
-  }
-  
-  /* Style for the header section */
-  header {
-    background-color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  header h1 {
-    font-size: 36px;
-    font-weight: bold;
-    color: #f26b6b;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-  
-  header nav ul {
-    display: flex;
-    list-style: none;
-  }
-  
-  header nav li {
-    margin-left: 20px;
-  }
-  
-  header nav li:first-child {
-    margin-left: 0;
-  }
-  
-  header nav a {
-    color: #555;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  header nav a:hover {
-    color: #f26b6b;
-  }
-  
+  .title1
+{
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 5%;
+  margin-left: 20%;
+}
+.title2 {
+  font-family: 'Delicious Handrawn', cursive;
+  font-size: 70px;
+  margin-left: 40%;
+}
+.title3
+{
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 60%;
+}
   /* Style for the hero section */
   .hero {
-    background-image: url("https://images.unsplash.com/photo-1581636625008-712f4a35a78e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    /* background-image: url(${backgroundImage}) ; */
     background-size: cover;
     background-position: center;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     text-align: center;
   }
   
-  .hero h2 {
-    font-size: 64px;
-    color: #fff;
-    text-shadow: 2px 2px #333;
-    margin-bottom: 20px;
-  }
   
   .hero p {
     font-size: 24px;
-    color: #fff;
+    color: #0a0a0a;
     text-shadow: 2px 2px #333;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   
   .hero button {
@@ -89,6 +52,8 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: 40%;
+
   }
   
   .hero button:hover {

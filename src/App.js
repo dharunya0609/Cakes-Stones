@@ -4,14 +4,14 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import WebFont from 'webfontloader';
-import { TbCherryFilled } from "react-icons/tb";
+// import { TbCherryFilled } from "react-icons/tb";
 
 
-
+import './App.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-
+// import logo from "./images/"
 import Home from "./Components/home";
 import Gallery from "./Components/gallery";
 import Orders from "./Components/orders";
@@ -24,22 +24,25 @@ function App() {
     return (
         <>
             <BrowserRouter>
-                <Navbar bg="dark" variant="dark">
-                    <Container>
-                        <Navbar.Brand href="/" style={{fontFamily: 'Cursive',color:'#ff5886',fontSize:'23px'}}>THE SIGNATURE CAKES & STONES
-                       <TbCherryFilled/>
-                        </Navbar.Brand>
-                        <Nav className="ms-auto">
-                            <Nav.Link href="/">HOME</Nav.Link>
-                            <Nav.Link href="/gallery">GALLERY</Nav.Link>
-                            <Nav.Link href="/about">ABOUT</Nav.Link>
-                            <Nav.Link href="/orders">ORDERS</Nav.Link>
-                            <Nav.Link href="/blogs">BLOGS</Nav.Link>
+                <div className="header">
+                <Navbar className="navbar" bg="transparent" >
+                    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+                    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet"></link>
+                        <div className="menu-toggle">
+                            <i className="fas fa-bars"></i>
+                            <i className="fas fa-times"></i>
+                        </div>
+                        <Nav className="nav-list">
+                            <Nav.Link className="nav-item" href="/">HOME</Nav.Link>
+                            <Nav.Link className="nav-item" href="/gallery">GALLERY</Nav.Link>
+                            <Nav.Link className="nav-item" href="/about">ABOUT</Nav.Link>
+                            <Nav.Link className="nav-item" href="/orders">ORDERS</Nav.Link>
+                            <Nav.Link className="nav-item" href="/blogs">BLOGS</Nav.Link>
 
 
                         </Nav>
-                    </Container>
-                </Navbar>
+                        </Navbar>
+                    </div>
                 <Routes>
                     <Route exact path="/"
                         element={<Home/>}></Route>
