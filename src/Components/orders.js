@@ -4,7 +4,7 @@ import React, { useState } from "react";
   import {Link} from 'react-router-dom';
 
 import Form from './form.js';
- import Tableform from "./tableform";
+ import Table from "./table";
 export default function Orders() 
 {
   const [showTableForm, setTableForm] = useState(false);
@@ -18,7 +18,7 @@ export default function Orders()
             <img src={i1} alt="Cake 1" />
             <h3>Event Booking</h3>
             <p>Birthday parties</p>
-            <Link to="/tableform" className="btn btn-primary">Sign up</Link>
+            <Link to="/table" className="btn btn-primary">Sign up</Link>
             {/* <button onClick={handleButtonClick}>Order Now</button>
             {showTableForm && <TableForm/>} */}
             {/* <button onClick={TableForm} >Order Now</button> */}
