@@ -10,7 +10,7 @@ import i1 from "../images/home_img.jpg";
       <div>
         <section className="features">
           <div className="feature">
-            <img src={i1} alt="Cake 1" />
+            <img src="https://images.unsplash.com/photo-1580745497986-76cbf3d259da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTJ8fGJpcnRoZGF5JTIwY2FrZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="Cake 1" />
             <h3>Custom Cakes</h3>
             <p>We can create any cake of your dreams for your special occasion.</p>
           </div>
