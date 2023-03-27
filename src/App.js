@@ -37,7 +37,7 @@ function App() {
                             <i className="fas fa-times"></i>
                         </div>
                         <Nav className="nav-list">
-                            <Nav.Link className="nav-item" href="/">HOME</Nav.Link>
+                            <Nav.Link  className="nav-item" href="/">HOME</Nav.Link>
                             <Nav.Link className="nav-item" href="/gallery">GALLERY</Nav.Link>
                             <Nav.Link className="nav-item" href="/about">ABOUT</Nav.Link>
                             <Nav.Link className="nav-item" href="/orders">ORDERS</Nav.Link>
