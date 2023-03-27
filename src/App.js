@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import WebFont from 'webfontloader';
 // import { TbCherryFilled } from "react-icons/tb";
 
+import { TbCherryFilled } from "react-icons/tb";
 
 import './App.css';
 import Container from 'react-bootstrap/Container';
@@ -17,6 +18,9 @@ import Gallery from "./Components/gallery";
 import Orders from "./Components/orders";
 import About from "./Components/about";
 import Blogs from "./Components/blogs";
+
+import EventForm from "./Components/eventform";
+import OrderingForm from "./Components/orderingform"
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
@@ -54,9 +58,16 @@ function App() {
                         element={<Orders/>}></Route>
                     <Route exact path="/blogs"
                         element={<Blogs/>}></Route>
+
+                    <Route exact path="/orderingform"
+                        element={<OrderingForm/>}></Route>
+                    <Route exact path="/eventform"
+                        element={<EventForm/>}></Route>
                     
                 </Routes>
             </BrowserRouter>
+
+            
         </>
     )
 }
