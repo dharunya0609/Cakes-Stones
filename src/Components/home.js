@@ -1,6 +1,7 @@
 import './style.css'
 import backgroundImage from '../images/tasty.jpg';
 
+import Payment from "../Components/payment"
 export default function Home()
 {
   const styles = {
@@ -20,6 +21,7 @@ export default function Home()
       </main>
       <footer>
         <p>footer</p>
+        <Payment/>
       </footer>
     
     </>);

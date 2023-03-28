@@ -3,13 +3,10 @@ import React from "react";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-// import WebFont from 'webfontloader';
-// import { TbCherryFilled } from "react-icons/tb";
 
-import { TbCherryFilled } from "react-icons/tb";
 
 import './App.css';
-import Container from 'react-bootstrap/Container';
+//import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 // import logo from "./images/"
@@ -42,6 +39,7 @@ function App() {
                             <Nav.Link className="nav-item" href="/about">ABOUT</Nav.Link>
                             <Nav.Link className="nav-item" href="/orders">ORDERS</Nav.Link>
                             <Nav.Link className="nav-item" href="/blogs">BLOGS</Nav.Link>
+                           
 
 
                         </Nav>
