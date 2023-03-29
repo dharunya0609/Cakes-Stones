@@ -1,8 +1,11 @@
+
+import Payment from "../Components/payment"
+
 export default function order()
 {
   return(<>
   <h1>Ordering Cakes Form</h1>
-  <form action="https://formspree.io/f/mvonbdyy"
+  <form 
   method="POST">
         <label>
           Name:
@@ -17,7 +20,8 @@ export default function order()
           Content:
           <textarea name="content" />
         </label>
-        <button type="submit">Submit</button>
+        <Payment/>
+       
 
 
   </form>

@@ -1,5 +1,5 @@
 import React,{useState} from "react"
-
+import Button from 'react-bootstrap/Button';
 export default function Payment()
 {
     const [amt,setAmt]=useState('');
@@ -42,9 +42,11 @@ export default function Payment()
     return(<>
     <h2>RazorPay Payment Integration</h2>
     <br/>
-    <input type="text" placeholder="Enter amount" value={amt} onChange={(e)=>setAmt(e.target.value)}/>
+    <label>
+    <input type="text" placeholder="Enter amount" value={amt} onChange={(e)=>setAmt(e.target.value)}/></label>
     <br/><br/>
-    <button onClick={handleSubmit}>Submit</button>
+   
+    <center><Button variant="success" onClick={handleSubmit} style={{width: '100px',textAlign:'center'}}size="sm">Pay</Button>{' '}</center>
     
     
     
